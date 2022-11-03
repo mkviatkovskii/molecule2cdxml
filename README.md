@@ -17,7 +17,7 @@ Simple utility to convert molecules to CDXML format using Indigo toolkit
     ```bash
     git clone https://github.com/epam/indigo
     ```
-3. Create CMake build folder
+3. Create CMake build folder and prepare build scripts
     ```bash
     mkdir build
     cd build
@@ -27,6 +27,11 @@ Simple utility to convert molecules to CDXML format using Indigo toolkit
     ```bash
     cmake --build . --target molecule2cdxml --config Release 
     ```
+   On Linux you may add additional parameters to parallelize and speed
+   up the compilation:
+   ```bash
+   cmake --build . --target molecule2cdxml --config Release -- -j $(nproc)
+   ```
 5. Check that utility works fine:
     ```
     $ ./molecule2cdxml c1ccccc1

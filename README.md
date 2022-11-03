@@ -11,7 +11,7 @@ Simple utility to convert molecules to CDXML format using Indigo toolkit
 1. Install system requirements (example for Ubuntu):
     ```bash
     sudo apt update
-    sudo apt install -y --no-install-recommends cmake g++ git make
+    sudo apt install -y cmake g++ git make
     ```
 2. Clone Indigo repository:
     ```bash
